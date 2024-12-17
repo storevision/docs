@@ -1,0 +1,15 @@
+site_name: Webstore Docs
+repo_url: https://github.com/storevision/docs
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.prev_next
+    - navigation.top
+    - search
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
