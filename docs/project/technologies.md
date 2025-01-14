@@ -11,7 +11,19 @@
 
 ## C# Backend
 
-WIP
+- **[ASP.NET Core](https://learn.microsoft.com/de-de/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-9.0)**: A cross-platform, high-performance web framework for building modern, cloud-based, connected applications.
+- **[Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)**: An ORM (Object-Relational Mapper) for .NET, simplifying data access and working with databases in C#.
+- **[AutoMapper](https://automapper.org/)**: A library that helps map one object to another, typically used for transforming models between different layers of an application.
+- **[Swagger](https://swagger.io/)**: A framework for API documentation and design, allowing you to visualize and interact with your API endpoints.
+- **[JWT](https://de.wikipedia.org/wiki/JSON_Web_Token)**: (Json Web Token): An implementation of JSON Web Tokens, used for securing and authenticating API requests.
+- **[Serilog](https://serilog.net/)**: A structured logging library for C#, useful for logging events in your application.
+- **[FluentValidation](https://docs.fluentvalidation.net/en/latest/)**: A popular validation library for .NET, making it easy to define complex validation rules in a fluent API style.
+- **[Hangfire](https://www.hangfire.io/)**: A framework for background job processing, allowing you to run background tasks in a web application, such as scheduled jobs or long-running tasks.
+- **[NLog](https://nlog-project.org/)**: A flexible and configurable logging framework for .NET applications.
+- **[MediatR](https://learn.microsoft.com/de-de/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-application-layer-implementation-web-api)**: A library for implementing the Mediator pattern in .NET, facilitating communication between objects.
+- **[Quartz.NET](https://www.nuget.org/packages/Quartz)**: A powerful, open-source job scheduling library for .NET applications, often used for task scheduling and background processing.
+- **[Redis](https://redis.io/de/)**: A fast in-memory data structure store, commonly used for caching, session storage, and real-time messaging.
+- **[Signalr](https://learn.microsoft.com/de-de/aspnet/signalr/overview/getting-started/introduction-to-signalr)**: A library for ASP.NET that simplifies the process of adding real-time web functionality to applications.
 
 ## Node.js Backend
 
