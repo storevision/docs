@@ -14,16 +14,24 @@ The backend is developed using the following architecture and technologies:
 
 **Architecture:**
 - **Layered Architecture**: Separation of concerns with controllers, services, and repositories.
+  
 - **RESTful APIs**: Exposes endpoints for client applications to interact with the backend.
+  
 - **Containerization**: Dockerized setup for consistent deployment.
 
 **Technologies:**
 - **Programming Language**: C# (.NET 9). [Official Documentation](https://learn.microsoft.com/en-us/dotnet/)
+  
 - **Framework**: ASP.NET Core for building APIs. [ASP.NET Core Documentation](https://learn.microsoft.com/en-us/aspnet/core/)
+  
 - **Database**: PostgreSQL. [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+  
 - **Authentication**: JWT tokens for secure user sessions. [JWT.io Documentation](https://jwt.io/introduction/)
+  
 - **Dependency Injection**: Built-in .NET Core DI framework. [Dependency Injection Documentation](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
+  
 - **Configuration Management**: JSON configuration files and environment variables. [Configuration in .NET](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/)
+  
 - **Containerization**: Docker and Docker Compose for deployment. [Docker Documentation](https://docs.docker.com/) | [Docker Compose Documentation](https://docs.docker.com/compose/)
 
 ### 3. Use Cases
