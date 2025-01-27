@@ -1,6 +1,6 @@
 # About the C# backend
 
-This is the JavaScript backend developed by [@afercher](https://github.com/afercher).
+This is the C# backend developed by [@afercher](https://github.com/afercher).
 
 ## Database
 
