@@ -13,4 +13,4 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Formatting File Trees
 
-We are using https://tree.nathanfriend.com/ to generate the file trees in the documentation.
+We are using [https://tree.nathanfriend.com](https://tree.nathanfriend.com/) to generate the file trees in the documentation.
