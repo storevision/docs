@@ -9,6 +9,7 @@ theme:
     - search
     - content.code.copy
   logo: assets/logo.png
+  favicon: assets/favicon.ico
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
