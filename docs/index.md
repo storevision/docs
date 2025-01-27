@@ -6,5 +6,5 @@ This project is a webstore written for a school project. The frontend uses the f
 The frontend code is written in <b><a href="https://www.typescriptlang.org/">TypeScript</a></b>.
 There are two backends for the project:
 
-- **[C# Backend](https://github.com/storevision/webstore-backend)** (No documentation)
+- **[C# Backend](https://github.com/storevision/webstore-backend)** [(Documented here)](CS-Backend/index.md)
 - **[Node.js Backend](https://github.com/storevision/webstore-backend-js)** [(Documented here)](JavaScript-Backend/index.md)
