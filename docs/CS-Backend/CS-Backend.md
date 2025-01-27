@@ -160,9 +160,9 @@ webstore-backend/
 **Key Components:**
 
 - **Controllers**: Handle API requests and responses.
-- **Services**: Contain business logic, including user management, product catalog operations, and order handling.
+- **Services**: Contain business logic, including user management, product catalog operations, and db operations.
 - **Models**: Define data structures and facilitate data exchange between layers.
-- **Repositories**: Abstract database operations, ensuring a clean separation from business logic.
+- **Data**: Contain the DbContext configuration.
 - **Configuration**: Centralized application settings for different environments.
 
 **Documentation Links for Frameworks and Libraries:**
