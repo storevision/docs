@@ -1,14 +1,29 @@
 site_name: Webstore Docs
+
 repo_url: https://github.com/storevision/docs
 site_url: https://storevision.github.io/docs/
+edit_uri: edit/main/docs/
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/talkarr/talkarr
+
 theme:
   name: material
   features:
+    - navigation.instant
+    - navigation.tracking
     - navigation.tabs
     - navigation.prev_next
     - navigation.top
     - search
     - content.code.copy
+    - content.code.highlight
+    - content.tooltips
+    - content.action.view
+    - content.action.edit
+
   logo: assets/logo.png
   favicon: assets/favicon.ico
   palette:
