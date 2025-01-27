@@ -8,4 +8,4 @@ The database is initialized through a couple of SQL scripts.
 
 The final database looks like this:
 
-![ERD of database](/assets/storevision-backend-js.png)
+![ERD of database](../assets/storevision-backend-js.png)
