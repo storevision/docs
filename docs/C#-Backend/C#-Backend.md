@@ -3,9 +3,8 @@
 ### 1. Project Definition
 The Webstore Backend project is a server-side application designed to manage the core functionalities of an online store. It provides APIs for user authentication, product management, order processing, and other essential e-commerce operations. This backend interacts with databases, handles business logic, and ensures secure communication with clients.
 
-**Key Features:**
+**Backend Features:**
 - User authentication and authorization using JWT tokens.
-- Product catalog management.
 - Order creation and tracking.
 - Integration with third-party services.
 - Secure and scalable architecture.
@@ -19,9 +18,9 @@ The backend is developed using the following architecture and technologies:
 - **Containerization**: Dockerized setup for consistent deployment.
 
 **Technologies:**
-- **Programming Language**: C# (.NET 6 or higher). [Official Documentation](https://learn.microsoft.com/en-us/dotnet/)
+- **Programming Language**: C# (.NET 9). [Official Documentation](https://learn.microsoft.com/en-us/dotnet/)
 - **Framework**: ASP.NET Core for building APIs. [ASP.NET Core Documentation](https://learn.microsoft.com/en-us/aspnet/core/)
-- **Database**: Likely SQL-based (e.g., Microsoft SQL Server or PostgreSQL). [Microsoft SQL Server Documentation](https://learn.microsoft.com/en-us/sql/) | [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+- **Database**: PostgreSQL. [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 - **Authentication**: JWT tokens for secure user sessions. [JWT.io Documentation](https://jwt.io/introduction/)
 - **Dependency Injection**: Built-in .NET Core DI framework. [Dependency Injection Documentation](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
 - **Configuration Management**: JSON configuration files and environment variables. [Configuration in .NET](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/)
@@ -29,20 +28,70 @@ The backend is developed using the following architecture and technologies:
 
 ### 3. Use Cases
 
-#### 3.1 User Authentication
-- **Scenario**: A user logs in to the application.
+#### 3.1 User Registration
+- **Scenario**: A user can register on the application by providing necessary details such as email, username, and password.
 - **Flow**:
-  1. User provides credentials via a client application.
-  2. Backend validates credentials and generates a JWT token.
-  3. The token is returned and stored securely on the client side.
-
-#### 3.2 Product Management
-- **Scenario**: An admin adds new products to the catalog.
+  1. User provides registration details via a client application.
+  2. If valid, the backend creates a new user record in the database and encrypts the password for security.
+  4. The user receives a success message upon successful registration.
+ 
+#### 3.2 User Login
+- **Scenario**: A user logs in.
 - **Flow**:
-  1. Admin sends product details via the API.
-  2. Backend validates and stores the product in the database.
+  1. The user submits their login credentials via the frontend.
+  2. The backend validates the credentials against the database.
+  3. If valid, an authentication token is generated and returned to the frontend.
+  4. The frontend stores the token securely for subsequent requests.
 
-#### 3.3 Order Processing
+- **Scenario**: A user logs out.
+- **Flow**:
+  1. The user initiates a logout request via the frontend.
+  2. The frontend clears the locally stored authentication token.
+  3. A confirmation of the logout is returned to the frontend.
+
+- **Scenario**: A user stays logged in (handled via token).
+- **Flow**:
+  1. Upon login, the backend issues a token with an expiration period (e.g., a JWT).
+  2. The frontend includes the token in subsequent API requests for authentication.
+  3. The backend validates the token on each request to ensure it is still valid.
+  4. If the token is expired or invalid, the user is prompted to log in again.
+  
+#### 3.3 Cart Management
+- **Scenario**: A user adds a new product to the cart.
+- **Flow**:
+  1. The user selects a product and submits an "add to cart" request via the frontend.
+  2. The backend validates the product ID and checks availability.
+  3. The product is added to the user's cart in the database.
+  4. The updated cart data is returned to the frontend.
+
+- **Scenario**: A user removes a product from the cart.
+- **Flow**:
+  1. The user selects a product to remove and submits a "remove from cart" request.
+  2. The backend verifies the product exists in the user's cart.
+  3. The product is removed from the cart in the database.
+  4. The updated cart data is returned to the frontend.
+
+- **Scenario**: A user increases the quantity of a product in the cart.
+- **Flow**:
+  1. The user selects a product and submits an "increase quantity" request.
+  2. The backend verifies the product is in the cart and checks stock availability.
+  3.The quantity of the product in the cart is updated in the database.
+  4. The updated cart data is returned to the frontend.
+
+- **Scenario**: A user decreases the quantity of a product in the cart.
+- **Flow**:
+  1. The user selects a product and submits a "decrease quantity" request.
+  2. The backend verifies the product is in the cart and ensures the quantity doesn't drop below zero.
+  3. The quantity of the product in the cart is updated in the database.
+  4. The updated cart data is returned to the frontend.
+
+- **Scenario**: A user views the current state of the cart.
+- **Flow**:
+  1. The user submits a "view cart" request.
+  2. The backend retrieves all items in the user's cart from the database.
+  3. The cart data is returned to the frontend with product details, quantities, and total cost.
+
+#### 3.4 Order Processing
 - **Scenario**: A customer places an order.
 - **Flow**:
   1. Customer submits the order via the API.
