@@ -1,6 +1,7 @@
 site_name: Webstore Docs
 
 repo_url: https://github.com/storevision/docs
+repo_name: storevision/docs
 site_url: https://storevision.github.io/docs/
 edit_uri: edit/main/docs/
 
