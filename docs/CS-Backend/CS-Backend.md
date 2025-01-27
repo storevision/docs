@@ -131,8 +131,6 @@ The backend is developed using the following architecture and technologies:
 
 - **Phase 1: Requirements Gathering** (1-2 weeks): Define scope, features, and goals.
 - **Phase 2: Development** (6-8 weeks): Implement core features and APIs.
-- **Phase 3: Testing** (2 weeks): Perform unit, integration, and performance tests.
-- **Phase 4: Deployment** (1 week): Deploy to production environment.
 
 **Milestones:**
 
