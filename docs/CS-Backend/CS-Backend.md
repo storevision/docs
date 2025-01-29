@@ -143,17 +143,7 @@ The backend is developed using the following architecture and technologies:
 
 **High-Level Directory Layout:**
 
-```
-webstore-backend/
-|-- Controllers/           # API controllers handling HTTP requests
-|-- Services/              # Business logic implementation
-|-- Models/                # Data models and DTOs
-|-- Repositories/          # Database interaction layer
-|-- Configuration/         # JSON files and environment settings
-|-- Infrastructure/        # Dockerfile and deployment scripts
-|-- Tests/                 # Unit and integration tests
-|-- Webshop.csproj         # .NET project file
-```
+- **[C# Backend]([https://github.com/storevision/webstore-backend](https://storevision.github.io/docs/project/backend/))** [(Documented here)](project/backend.md)
 
 **Key Components:**
 
